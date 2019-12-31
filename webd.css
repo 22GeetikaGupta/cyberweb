@@ -1,0 +1,156 @@
+body{
+	margin: 0;
+}
+.myDiv {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    
+    color: white;
+    
+}
+
+.myDiv h2 {
+	font-size: 80px;
+	/*color: #4A235A ;*/
+	color: white;
+	padding-top: 250px;
+	animation-name: example;	
+	animation-duration: 2s;
+
+}
+
+@keyframes example {
+	from{
+		transform: scale(0.8);
+		font-size: 30px;
+	}
+	to{
+		transform: scale(1);
+		font-size: 80px;}
+}
+
+
+
+.myDiv p {
+	font-size: 30px;
+	line-height: 1px;
+	color: #CDE7EE;
+
+}
+
+.myDiv .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("img5.png");
+    background-repeat: no-repeat;
+  /*  background-size: cover;*/
+    opacity: 0.9;
+    background-size: cover;
+    height: 700px;
+
+}
+
+@keyframes example2 {
+	from {
+		transform: scale(0.8);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+
+.nav {
+	background-color: #095A5A ;
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+}
+
+
+.nav ul {
+	position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav li {
+  float: right;
+}
+
+.nav li a {
+  display: block;
+/*   padding: 14px 16px;
+*/   padding-top: 30px;
+padding-bottom: 20px;
+padding-right: 70px;
+	font-size: 20px;
+  /*color: #1B4F72;*/
+  color: white;
+  text-decoration: none;
+}
+
+.about {
+	text-align: center;
+	position: relative;
+	padding-top: 280px;
+	
+	justify-content: center;
+}
+
+.about h2 {
+	font-size: 30px;
+}
+
+.about div {
+	font-size: 20px;
+	margin: 20px;
+}
+
+.service-card {
+  margin: auto;
+  width: 70%;
+  display: grid;
+  grid-gap: 10px;
+  margin-top: 40px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  /*height: 70vh;*/
+  background-color: #B2E5E4;
+  box-shadow: 5px 5px 5px grey;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.service{
+margin: 20px;
+
+  display: block;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+  padding: 50px 20px;
+  border-radius: 10px;
+  /* background-image: linear-gradient(to right, rgb(59, 141, 107), rgb(100,200,158), rgb(59, 141, 107)); 
+*/
+/*	background-color: #1CBFBC;*/
+background-color: #38A7BF;
+}
+
+.service-section h2 {
+	text-align: center;
+	padding-top: 40px;
+	font-size: 30px;
+
+}
+
+#services {
+	margin-bottom: 20px;
+}
